@@ -23,7 +23,7 @@ public class Agenda {
 		case 0:
 			break;
 		default:
-			System.out.println("OpÃ§Ã£o InvÃ¡lida, tente novamente!");
+			System.out.println("Opção Inválida, tente novamente!");
 			break;
 		}
 		leitor.nextLine ();
