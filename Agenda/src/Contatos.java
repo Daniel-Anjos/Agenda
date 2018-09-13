@@ -32,15 +32,16 @@ public class Contatos {
 			this.endereco = endereco;
 		}
 
-		public static void Cadastro (String nome, String telefone, String endereco) {
+		public static void Cadastro () {
 			Scanner l = new Scanner(System.in);
+			//Contatos [] c = new Contatos [5];
 			System.out.println("*** Cadastro de Contatos ***");	
 			System.out.println("Informe o Nome do contato: ");
-			nome = l.nextLine();
+			//nome = l.nextLine();
 			System.out.println("Informe o telefone:");
-			telefone = l.nextLine();
-			System.out.println("Informe o endereço: ");
-			endereco = l.nextLine();
+			//telefone = l.nextLine();
+			System.out.println("Informe o endereï¿½o: ");
+			//endereco = l.nextLine();
 			
 		}
 		

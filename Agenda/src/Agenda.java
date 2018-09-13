@@ -15,7 +15,7 @@ public class Agenda {
 		opcao = leitor.nextInt();
 		switch (opcao) {
 		case 1:
-			// novo contato
+			Contatos.Cadastro();
 			break;
 		case 2:
 			//consulta
@@ -23,7 +23,7 @@ public class Agenda {
 		case 0:
 			break;
 		default:
-			System.out.println("Opção Inválida, tente novamente!");
+			System.out.println("Opcao Invalida, tente novamente!");
 			break;
 		}
 		leitor.nextLine ();
