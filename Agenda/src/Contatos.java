@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
 public class Contatos {
 
 		int codigo;
 		String nome;
 		String telefone;
 		String endereco;
-		
 				
 		public String getNome() {
 			return nome;
@@ -32,17 +33,30 @@ public class Contatos {
 			this.endereco = endereco;
 		}
 
-		public static void Cadastro () {
+		public Contatos() {
+			this.getNome();
+			this.getTelefone();
+			this.getEndereco();
+		}
+		
+		
+		public void Cadastrar () {
+			@SuppressWarnings("resource")
 			Scanner l = new Scanner(System.in);
-			//Contatos [] c = new Contatos [5];
 			System.out.println("*** Cadastro de Contatos ***");	
 			System.out.println("Informe o Nome do contato: ");
-			//nome = l.nextLine();
+			this.setNome(l.nextLine());
 			System.out.println("Informe o telefone:");
-			//telefone = l.nextLine();
-			System.out.println("Informe o endere�o: ");
-			//endereco = l.nextLine();
+			this.setTelefone(l.nextLine());
+			System.out.println("Informe o endereco: ");
+			this.setEndereco(l.nextLine());
 			
+		}
+		
+		public void Consultar () {
+			System.out.println("Nome:"+ this.getNome());
+			System.out.println("Telefone: "+ this.getTelefone());
+			System.out.println("Endereco:"+ this.getEndereco());
 		}
 		
 }

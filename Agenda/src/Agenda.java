@@ -5,6 +5,7 @@ public class Agenda {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner leitor = new Scanner(System.in);
+		Contatos c = new Contatos();
 		int opcao;
 		
 		do {
@@ -13,12 +14,13 @@ public class Agenda {
 		System.out.println("2 - Consultar Agenda");
 		System.out.println("0 - Sair");
 		opcao = leitor.nextInt();
+		
 		switch (opcao) {
 		case 1:
-			Contatos.Cadastro();
+			c.Cadastrar();
 			break;
 		case 2:
-			//consulta
+			c.Consultar();
 			break;
 		case 0:
 			break;
